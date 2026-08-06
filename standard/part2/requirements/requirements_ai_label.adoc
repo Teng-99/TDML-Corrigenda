@@ -1,0 +1,140 @@
+[width="100%",cols="20%,80%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/ailabel
+|Dependency |JSON
+|Dependency |/req/base/jsonbasetype
+|Dependency |/req/base/geospatialtype
+|Requirement 19 |/req/ailabel/label
+|Requirement 20 |/req/ailabel/scenelabel
+|Requirement 21 |/req/ailabel/objectlabel
+|Requirement 22 |/req/ailabel/pixellabel
+|Requirement 23 |/req/ailabel/imageformatcode
+|===
+
+The AI_Label object is encoded as a JSON object with properties as shown in Table 9.
+
+[width="100%",cols="20%,80%",]
+|===
+|Requirement 19 |/req/ailabel/label
+
+Each AI_Label object SHALL implement the Mandatory properties shown in Table 9.
+|===
+
+.AI_Label properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |Type of the label object. |"AI_AbstractLabel" |Mandatory
+|isNegative |Whether the training sample related to the label is a positive or negative sample. |Bool [0..1] 
+
+Default: false |Optional
+|confidence |Confidence score of the labeler.  |Float [0..1] 
+
+Default: 1.0 
+
+Range: [0, 1] |Optional
+|===
+
+Example:
+
+ {
+   "type": "AI_AbstractLabel",
+   "isNegative": false,
+   "confidence": 1.0
+ }
+
+The AI_SceneLabel object is encoded as a JSON object with properties as shown in Table 10.
+
+[width="100%",cols="20%,80%",]
+|===
+|Requirement 20 |/req/ailabel/scenelabel
+
+Each AI_SceneLabel object SHALL implement the properties shown in Table 10.
+|===
+
+.AI_SceneLabel properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |Type of the label object at the scene level. |"AI_SceneLabel" |Mandatory
+|class |Class that records the semantic of the scene of the training sample. |CharacterString [1..1] |Mandatory
+|===
+
+Example:
+
+ {
+   "type": "AI_SceneLabel",
+   "class": "Airport"
+ }
+
+The AI_ObjectLabel object is encoded as a JSON object with properties shown in Table 11.
+
+[width="100%",cols="20%,80%",]
+|===
+|Requirement 21 |/req/ailabel/objectlabel
+
+Each AI_ObjectLabel object SHALL implement the Mandatory properties shown in Table 11.
+|===
+
+.AI_ObjectLabel properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |Type of the label object at the object level. |"AI_ObjectLabel" |Mandatory
+|object |Feature that represents the position and attributes of the object.  |Feature [1..1] |Mandatory
+|bboxType |Type of the bbox. |CharacterString [0..1] |Optional
+|class |Class that records the semantic of the object type. |CharacterString [1..1] |Mandatory
+|dateTime |Created time of the object label. |DateTime [0..1] |Optional
+|===
+
+Example:
+
+ {
+   "type": "AI_ObjectLabel",
+   "class": "Truck", 
+   "object": {"type": "Feature", "properties": {"truncated": 0.0, "occluded": 0, "alpha": -1.57}, "geometry": {"type": "Polygon", "coordinates": [[[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]]}}, 
+   "bboxType": "Horizontal BBox"
+ }
+
+The AI_PixelLabel object is encoded as a JSON object with properties as shown in Table 12.
+
+[width="100%",cols="20%,80%",]
+|===
+|Requirement 22 |/req/ailabel/pixellabel
+
+Each AI_PixelLabel object shall implement the Mandatory properties shown in Table 12.
+|===
+
+.AI_PixelLabel properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |Type of the label object at the pixel level. |"AI_PixelLabel" |Mandatory
+|imageURL |URL of the images representing the label information. |URL [1..*] |Mandatory
+|imageFormat |Image data format. |AI_ImageFormatCode [1..*] |Mandatory
+|===
+
+Example:
+
+ {
+   "type": "AI_PixelLabel",
+   "imageURL": ["/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif"],
+   "imageFormat": ["image/tiff; application=geotiff"]
+ }
+
+The AI_ImageFormatCode is encoded as a text string whose value is defined in Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types https://www.ietf.org/rfc/rfc2046.txt[RFC 2046].
+
+[width="100%",cols="20%,80%",]
+|===
+|Requirement 23 |/req/ailabel/imageformatcode
+
+Each AI_ImageFormatCode value SHALL be encoded as a text string defined in Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types https://www.ietf.org/rfc/rfc2046.txt[RFC 2046].
+|===
+
+Examples:
+
+ a)	"image/tiff; application=geotiff" 
+ b)	"application/x-netcdf"
+ c)	"image/png"
+ d)	"image/jp2"

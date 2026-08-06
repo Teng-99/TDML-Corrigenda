@@ -1,0 +1,68 @@
+[width="100%",cols="20%,80%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/base/geospatialtype
+|Dependency |XML
+|Dependency |GML
+|Requirement 10|/req/base/geospatialtype/feature
+|===
+
+The encoding of one or more features follows GML for encoding a Feature element, with members “type”, “geometry” and “properties”. A Feature element represents a spatially bounded thing. Every Feature element is a GML element no matter where it occurs in a GML text.
+
+[width="100%",cols="20%,80%",]
+|===
+|Requirement 10|/req/base/geospatialtype/feature
+
+Each Feature value SHALL be encoded using the GML feature encoding defined by OpenGIS in GML Section 3.2:
+
+http://www.opengis.net/gml/3.2
+|===
+
+Examples of Feature encodings are:
+
+ a) <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <truncated>0.0</truncated>
+            <occluded>0</occluded>
+            <alpha>-0.2</alpha>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+    <gml:location>
+        <gml:GeometricComplex>
+            <gml:element>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:element>
+        </gml:GeometricComplex>
+    </gml:location>
+ b) <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <iscrowd>0</iscrowd>
+            <area>2580</area>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+    <gml:location>
+        <gml:GeometricComplex>
+            <gml:element>
+                <gml:LineString>
+                    <gml:posList>1.0 1.0 2.0 2.0</gml:posList>
+                </gml:LineString>
+            </gml:element>
+        </gml:GeometricComplex>
+    </gml:location>
+ c) <gml:location>
+        <gml:GeometricComplex>
+            <gml:element>
+                <gml:Point>
+                    <gml:pos>1.0 1.0</gml:pos>
+                </gml:Point>
+            </gml:element>
+        </gml:GeometricComplex>
+    </gml:location>

@@ -1,0 +1,7 @@
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/TrainingDML-AI-1/1.0/req/ailabel 
+subject:: Implementation Standard
+inherit:: /req/aitrainingdata
+====

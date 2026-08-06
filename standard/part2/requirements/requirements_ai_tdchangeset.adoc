@@ -1,0 +1,44 @@
+[width="100%",cols="20%,80%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/aitdchangeset
+|Dependency |JSON
+|Dependency |/req/base/jsonbasetype
+|Dependency |/req/tdtrainingdata
+|Requirement 29 |/req/aitdchangeset/tdchangeset
+|===
+
+The AI_TDChangeset object is encoded as a JSON object with properties shown in Table 17.
+
+[width="100%",cols="20%,80%",]
+|===
+|Requirement 29 |/req/aitdchangeset/tdchangeset
+
+Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in Table 17.
+|===
+
+.AI_ TDChangeset properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |Type of the TD changeset object. |"AI_TDChangeset" |Mandatory
+|id |Identifier of the changeset. |CharacterString [1..1] |Mandatory
+|datasetId |Identifier of the training dataset the changeset belongs to. |CharacterString [0..1] |Optional
+|version |Version of the training dataset that the changeset belongs to. |CharacterString [0..1] |Optional
+|changeCount |Total number of changed training samples. |Int [1..1] |Mandatory
+|createdTime |The time that the changeset was created. |DateTime [0..1] |Optional
+|add |Added training samples. |AI_AbstractTrainingData [0..*] |Optional
+|modify |Modified training samples. |AI_AbstractTrainingData [0..*] |Optional
+|delete |Deleted training samples. |AI_AbstractTrainingData [0..*] |Optional
+|===
+
+Example:
+
+ {
+   "type": "AI_TDChangeset",
+   "id": "changeset-dota_v1.5",
+   "datasetId": "dota_v1.5",
+   "createdTime": "2019-01-01",
+   "changeCount": 9, 
+   "modify": [{"type": "AI_EOTrainingData", "id": "P1228", "dataSources": [{"title": "GF"}], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "AI_ObjectLabel", "class": "ship", "object": {"type": "Feature", "properties": {}, "geometry": {"type": "Polygon", "coordinates": [[[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]]}},"bboxType": "Horizontal BBox"}, …]}]
+ }

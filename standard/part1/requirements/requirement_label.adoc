@@ -1,0 +1,81 @@
+[requirement]
+====
+[%metadata]
+identifier:: /req/ailabel/classes 
+
+For each UML class defined or referenced in AI_Label
+
+
+[.component,class=part]
+--
+Any implementation standard SHALL contain an element which
+represents the same concept as that defined for the UML class.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL represent associations with the
+same source, target, direction, roles, and multiplicities as those of
+the UML class.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL represent the attributes of the
+UML class including the name, definition, type, and multiplicity.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL represent the attributes of all
+super classes of the UML class including the name, definition, type, and
+multiplicity.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL represent the associations of all
+super classes of the UML class including the source, target, direction,
+roles, and multiplicity.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL specify how an implementation
+observes all constraints the Conceptual Model imposes on the UML class.
+--
+====
+
+[permission]
+====
+[%metadata]
+identifier:: /per/ailabel/classes 
+
+For each UML class defined or referenced in AI_Label 
+
+
+[.component,class=part]
+--
+An implementation standard MAY represent that class as a null class
+with no attributes, associations, or definition.
+--
+
+[.component,class=part]
+--
+An implementation standard MAY represent an association of the UML
+class with a null association.
+--
+
+[.component,class=part]
+--
+An implementation standard MAY represent an attribute of the UML
+class with a null attribute.
+--
+
+[.component,class=part]
+--
+Whenever a null element is used to represent a concept from the
+AI_Label, the implementation standard SHOULD document that mapping and
+provide an explanation for why that concept was not implemented.
+--
+====

@@ -1,0 +1,19 @@
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/TrainingDML-AI-1/1.0/req/aitrainingdataset
+
+subject:: Implementation Standard
+
+inherit:: ISO 19115-1:2014
+
+inherit:: /req/aitrainingdata
+
+inherit:: /req/aitask
+
+inherit:: /req/ailabeling
+
+inherit:: /req/aidataquality
+
+inherit:: /req/aitdchangeset
+====

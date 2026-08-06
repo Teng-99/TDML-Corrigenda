@@ -1,0 +1,69 @@
+[appendix]
+[[annex-ats]]
+== Abstract Test Suite (Normative)
+
+=== Introduction
+
+Conformance is tested using the XML Schema document which formalize the requirements described above.
+
+=== Conformance Class: Base
+
+The Base conformance class tests that occurrences of the basic types are encoded according to the requirements.
+
+==== Conformance Class: XML Base Type
+
+include::abstract_tests/ats_class_base_xml_base_type.adoc[]
+
+==== Conformance Class: ISO Metadata Type
+
+include::abstract_tests/ats_class_base_iso_metadata_type.adoc[]
+
+==== Conformance Class: ISO Quality Type
+
+include::abstract_tests/ats_class_base_iso_quality_type.adoc[]
+
+==== Conformance Class: Geospatial Type
+
+include::abstract_tests/ats_class_base_geospatial_type.adoc[]
+
+=== Conformance Class: AI_TrainingDataset
+
+The AI_TrainingDataset conformance class tests that the training dataset object is encoded according to the requirements.
+
+include::abstract_tests/ats_class_trainingdataset.adoc[]
+
+=== Conformance Class: AI_TrainingData
+
+The AI_TrainingData conformance class tests that the training data objects are encoded according to the requirements.
+
+include::abstract_tests/ats_class_trainingdata.adoc[]
+
+=== Conformance Class: AI_Task
+
+The AI_Task conformance class tests that the task objects are encoded according to the requirements.
+
+include::abstract_tests/ats_class_task.adoc[]
+
+=== Conformance Class: AI_Label
+
+The AI_Label conformance class tests that the label objects are encoded according to the requirements.
+
+include::abstract_tests/ats_class_label.adoc[]
+
+=== Conformance Class: AI_Labeling
+
+The AI_Labeling conformance class tests that the labeling objects are encoded according to the requirements.
+
+include::abstract_tests/ats_class_labeling.adoc[]
+
+=== Conformance Class: AI_DataQuality
+
+The AI_DataQuality conformance class tests that the data quality objects are encoded according to the requirements.
+
+include::abstract_tests/ats_class_dataquality.adoc[]
+
+=== Conformance Class: AI_TDChangeset
+
+The AI_TDChangeset conformance class tests that the TD changeset objects are encoded according to the requirements.
+
+include::abstract_tests/ats_class_tdchangeset.adoc[]
