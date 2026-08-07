@@ -44,6 +44,8 @@ UML:: Unified Modeling Language
 
 XML:: Extensible Markup Language
 
+MIME:: Multipurpose Internet Mail Extensions
+
 === UML Notation
 
 The Standard is presented in this document through diagrams using the

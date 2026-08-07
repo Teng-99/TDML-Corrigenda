@@ -21,8 +21,11 @@ The ISO classes explicitly used in the TrainingDML-AI UML model are introduced i
 |Feature |Abstraction of real world phenomena.
 |MD_Band |Range of wavelengths in the electromagnetic spectrum.
 |MD_Scope |The target resource and physical extent for which information is reported.
+|MD_ReferenceSystem |Information about the reference system.
+|LI_Lineage |Information about the events or source data used in constructing the data specified by the scope or lack of knowledge about lineage.
 |EX_Extent |Extent of the resource.
 |CI_Citation |Standardized resource reference.
+|MD_Resolution |Level of detail expressed as a scale factor, a distance or an angle.
 |DataQuality |Quality information for the data specified by a data quality scope.
 |QualityElement |Aspect of quantitative quality information.
 |===
@@ -93,7 +96,7 @@ AI_MetricsInLiterature
 
 include::../requirements/requirements_class_trainingdata.adoc[]
 
-The AI_AbstractTrainingData includes the source data and its corresponding labels, which focus on a compact modeling of individual training samples. When there is a need to identify the different uses/purposes, an optional attribute, the training type (training, validation, or test types), can be added at the individual level. The attribute datasetId helps identify samples from different training datasets.
+The AI_AbstractTrainingData includes the source data and its corresponding labels, which focus on a compact modeling of individual training samples. When there is a need to identify the different uses/purposes, an optional attribute, the training type (training, validation, test, or retraining types), can be added at the individual level. The attribute datasetId helps identify samples from different training datasets.
 
 The AI_EOTrainingData is defined to convey attributes specific to EO. It provides additional attributes, including spatial extent and date/time of the source EO inputs.
 
@@ -174,6 +177,12 @@ The UML diagram of the AI_Label is illustrated in <<figure-uml-label>>.
 .UML diagram of AI_Label.
 image::figures/uml_model_label.jpg[]
 
+The Code Lists provided for the AI_Label are illustrated in <<figure-uml-label-codelist>>.
+
+.Code lists from the AI_TrainingData.
+[[figure-uml-label-codelist]]
+image::figures/uml_model_label_codelist.jpg[]
+
 ==== Requirements
 
 The following requirement defines the rules governing the implementation of the AI_Label conceptual model as an implementation standard.
@@ -192,6 +201,15 @@ include::../requirements/requirement_label.adoc[]
 |AI_PixelLabel |AI_PixelLabel represents the pixel level label using a coverage.
 |===
 
+.Code list classes defined in AI_Label
+[width="100%",cols="34%,66%",options="header",]
+|===
+|Name |Description
+|AI_ImageFormatCode
+\<<CodeList>>
+|AI_ImageFormatCode is a code list used to specify the MIME type of an image.
+|===
+
 === AI_Labeling
 
 include::../requirements/requirements_class_labeling.adoc[]
@@ -208,6 +226,12 @@ The UML diagram of the AI_Labeling is illustrated in <<figure-uml-labeling>>.
 .UML diagram of AI_Labeling.
 image::figures/uml_model_labeling.jpg[]
 
+The Code Lists provided for the AI_Labeling are illustrated in <<figure-uml-labeling-codelist>>.
+
+.Code lists from the AI_TrainingData.
+[[figure-uml-labeling-codelist]]
+image::figures/uml_model_labeling_codelist.jpg[]
+
 ==== Requirements
 
 The following requirement defines the rules governing the implementation of the AI_Labeling conceptual model as an implementation standard.
@@ -223,6 +247,15 @@ include::../requirements/requirement_labeling.adoc[]
 |AI_Labeling |AI_Labeling defines basic provenance information on how to create the training dataset and includes the labeler and labeling procedure.
 |AI_Labeler |AI_Labeler identifies the agent that creates the labels and can be mapped to the agent in W3C PROV.
 |AI_LabelingProcedure |AI_LabelingProcedure represents the process for labeling and can be mapped to the activity in W3C PROV.
+|===
+
+.Code list classes defined in AI_Labeling
+[width="100%",cols="34%,66%",options="header",]
+|===
+|Name |Description
+|AI_LabelingMethodCode
+\<<CodeList>>
+|AI_LabelingMethodCode is a code list used to identify the methods used in the labeling procedure.
 |===
 
 === AI_TDChangeset

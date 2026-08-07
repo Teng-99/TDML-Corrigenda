@@ -22,12 +22,17 @@ is a subset of machine learning, which is essentially a neural network with thre
 [[training-dataset-definition]]
 === Training Dataset
 
-a collection of samples, often labeled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labeled as values of a dependent variable for generating a trained predictive model. 
+a collection of samples, often labelled with known terms or expected values for supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labeled as values of a dependent variable for generating a trained predictive model. 
 
 [[label-definition]]
 === Label
 
 refers to known or expected results annotated as values of a dependent variable in training samples. A training sample label is different from those on a geographical map, which are known as map labels or annotations.
+
+----
+Note 1 to entry: A training sample label is different from those on a geographical map, which are known as map labels or annotations. 
+----
+
 
 [[provenance-definition]]
 === Provenance
@@ -68,7 +73,7 @@ task of assigning class labels to pixels of images or points of point clouds.
 [[change-detection-definition]]
 === Change Detection
 
-task that finds the changes in an area between images taken at different times.
+recognition of changes between images acquired at different times.
 
 [[threed-model-reconstruction-definition]]
 === 3D Model Reconstruction
