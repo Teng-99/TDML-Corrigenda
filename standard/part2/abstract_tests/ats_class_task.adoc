@@ -8,7 +8,7 @@
 
 [width="100%",cols="20%,80%",]
 |===
-2+|Abstract Test 17
+2+|Abstract Test 20
 |Test ID |/conf/aitask/task
 |Requirement |/req/aitask/task
 |Test purpose |Verify that instance documents using the AI_Task JSON objects listed in Table 7 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_task.json.
@@ -17,7 +17,7 @@
 
 [width="100%",cols="20%,80%",]
 |===
-2+|Abstract Test 18
+2+|Abstract Test 21
 |Test ID |/conf/aitask/eotask
 |Requirement |/req/aitask/eotask
 |Test purpose |Verify that instance documents using the AI_EOTask JSON objects listed in Table 7 and Table 8 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_eoTask.json.

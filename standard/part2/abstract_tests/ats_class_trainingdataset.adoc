@@ -14,7 +14,7 @@
 
 [width="100%",cols="20%,80%",]
 |===
-2+|Abstract Test 11
+2+|Abstract Test 14
 |Test ID |/conf/aitrainingdataset/trainingdataset
 |Requirement |/req/aitrainingdataset/trainingdataset
 |Test purpose |Verify that instance documents using the AI_TrainingDataset JSON objects listed in Table 2 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_trainingDataset.json.
@@ -23,7 +23,7 @@
 
 [width="100%",cols="20%,80%",]
 |===
-2+|Abstract Test 12
+2+|Abstract Test 15
 |Test ID |/conf/aitrainingdataset/metricsinliterature
 |Requirement |/req/aitrainingdataset/metricsinliterature
 |Test purpose |Verify that instance documents using the AI_MetricsInLiterature JSON objects listed in Table 3 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_metricsInLiterature.json.
@@ -32,7 +32,7 @@
 
 [width="100%",cols="20%,80%",]
 |===
-2+|Abstract Test 13
+2+|Abstract Test 16
 |Test ID |/conf/aitrainingdataset/eotrainingdataset
 |Requirement |/req/aitrainingdataset/eotrainingdataset
 |Test purpose |Verify that instance documents using the AI_EOTrainingDataset JSON objects listed in Table 2 and Table 4 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_eoTrainingDataset.json.

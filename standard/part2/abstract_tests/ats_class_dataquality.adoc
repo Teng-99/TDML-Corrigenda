@@ -10,7 +10,7 @@
 
 [width="100%",cols="20%,80%",]
 |===
-2+|Abstract Test 28
+2+|Abstract Test 31
 |Test ID |/conf/aidataquality/classbalancedegree
 |Requirement |/req/aidataquality/classbalancedegree
 |Test purpose |Verify that instance documents using the AI_ClassBalanceDegree JSON objects listed in Table 16 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_classBalanceDegree.json.

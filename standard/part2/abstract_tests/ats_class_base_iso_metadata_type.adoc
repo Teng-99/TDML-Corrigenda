@@ -40,3 +40,30 @@
 |Test purpose |Verify that instance documents using the MD_Scope JSON objects validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/part2/1.0/md_scope.json.
 |Test method |Validate the instance document against the md_scope.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 9
+|Test ID |/conf/base/isometadatatype/referenceSystem
+|Requirement |/req/base/isometadatatype/referenceSystem
+|Test purpose |Verify that instance documents using the MD_ReferenceSystem JSON objects validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/md_referenceSystem.json.
+|Test method |Validate the instance document against the md_referenceSystem.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 10
+|Test ID |/conf/base/isometadatatype/lineage
+|Requirement |/req/base/isometadatatype/lineage
+|Test purpose |Verify that instance documents using the LI_Lineage JSON objects validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/li_lineage.json.
+|Test method |Validate the instance document against the li_lineage.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 11
+|Test ID |/conf/base/isometadatatype/resolution
+|Requirement |/req/base/isometadatatype/resolution
+|Test purpose |Verify that instance documents using the MD_Resolution JSON objects validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/md_resolution.json.
+|Test method |Validate the instance document against the md_resolution.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===

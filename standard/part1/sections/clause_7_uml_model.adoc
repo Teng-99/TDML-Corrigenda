@@ -141,7 +141,7 @@ include::../requirements/requirement_trainingdata.adoc[]
 
 include::../requirements/requirements_class_task.adoc[]
 
-Various AI/ML tasks in specific domains can have different organizing forms of TD, including source data and label representations. AI_EOTask is proposed by extending AI_AbstractTask to represent specific AI/ML tasks in the EO domain. The task type can refer to a particular type defined by an external category, such as scene classification or change detection. It specifies, for example, whether a remote sensing training dataset is used for scene classification, objection detection, land use or land cover, or change detection scenarios.
+Various AI/ML tasks in specific domains can have different organizing forms of TD, including source data and label representations. AI_EOTask is proposed by extending AI_AbstractTask to represent specific AI/ML tasks in the EO domain. The task type can refer to a particular type defined by an external category, such as scene classification or change detection. It specifies, for example, whether a remote sensing training dataset is used for scene classification, object detection, land use or land cover, or change detection scenarios.
 
 The UML diagram of the AI_Task is illustrated in <<figure-uml-task>>.
 
@@ -179,7 +179,7 @@ image::figures/uml_model_label.jpg[]
 
 The Code Lists provided for the AI_Label are illustrated in <<figure-uml-label-codelist>>.
 
-.Code lists from the AI_TrainingData.
+.Code lists from the AI_Label.
 [[figure-uml-label-codelist]]
 image::figures/uml_model_label_codelist.jpg[]
 
@@ -228,7 +228,7 @@ image::figures/uml_model_labeling.jpg[]
 
 The Code Lists provided for the AI_Labeling are illustrated in <<figure-uml-labeling-codelist>>.
 
-.Code lists from the AI_TrainingData.
+.Code lists from the AI_Labeling.
 [[figure-uml-labeling-codelist]]
 image::figures/uml_model_labeling_codelist.jpg[]
 

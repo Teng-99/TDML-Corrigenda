@@ -7,7 +7,7 @@
 
 [width="100%",cols="20%,80%",]
 |===
-2+|Abstract Test 9
+2+|Abstract Test 12
 |Test ID |/conf/base/isoqualitytype/element
 |Requirement |/req/base/isoqualitytype/element
 |Test purpose |Verify that instance documents using the QualityElement XML elements validate against the XML schema specified in https://schemas.isotc211.org/schemas/19157/-/mdq/1.2.0/dataQualityElement.xsd.

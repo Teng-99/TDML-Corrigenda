@@ -5,7 +5,7 @@ The TrainingDML-AI Conceptual Model Standard defines how to represent and exchan
 The training data model defined in this document facilitates interoperability by enabling heterogeneous training datasets to conform to a unified representation and exchange form. It ensures that training data from different vendors can be consistently shared and interpreted, improving the accessibility and promoting the integration of geospatial AI/ML resources.
 
 The TrainingDML-AI conceptual model (<<uml_model,Clause 7>>) is formally specified
-using UML class diagrams, complemented by a data dictionary (<<data_dictionalry,Clause 8>>)
+using UML class diagrams, complemented by a data dictionary (<<data_dictionary,Clause 8>>)
 providing the definitions and explanations of the object classes and
 attributes. This conceptual model provides the basis for specifying
 encoding implemented in languages such as JSON, or XML.
@@ -38,7 +38,7 @@ As shown in <<figure-modularization>>, the TrainingDML-AI conceptual model is th
 
 ==== Element Modeling
 
-The modeling of all elements in the TrainingDML-AI conceptual model has the following principles (Reference [7]).
+The modeling of all elements in the TrainingDML-AI conceptual model has the following principles.
 
 * Granularity. Two levels of granularity are differentiated in the conceptual model: The Training Dataset is used to refer to the collection level, and the Training Data is used to refer to the individual level.
 

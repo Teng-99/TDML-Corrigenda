@@ -10,16 +10,16 @@
 |Dependency |/req/ailabeling
 |Dependency |/req/aidataquality
 |Dependency |/req/aitdchangeset
-|Requirement 11 |/req/aitrainingdataset/trainingdataset
-|Requirement 12 |/req/aitrainingdataset/metricsinliterature
-|Requirement 13 |/req/aitrainingdataset/eotrainingdataset
+|Requirement 14 |/req/aitrainingdataset/trainingdataset
+|Requirement 15 |/req/aitrainingdataset/metricsinliterature
+|Requirement 16 |/req/aitrainingdataset/eotrainingdataset
 |===
 
 The AI_TrainingDataset object is encoded as a JSON object with properties shown in Table 2.
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 11 |/req/aitrainingdataset/trainingdataset
+|Requirement 14 |/req/aitrainingdataset/trainingdataset
 
 Each AI_TrainingDataset object SHALL implement the Mandatory properties shown in Table 2.
 |===
@@ -47,6 +47,9 @@ Each AI_TrainingDataset object SHALL implement the Mandatory properties shown in
 |numberOfClasses |Total number of classes in the AI training dataset. |Int [0..1] |Optional
 |classificationSchema |Classification schema for classes used in the AI training dataset. |CharacterString [0..1] |Optional
 |classes |Classes used in the AI training dataset. |NamedValue [0..*] |Optional
+|extent |Spatial extent of the training dataset. |EX_Extent [0..1] |Optional
+|referenceSystem |Reference system of the training dataset. |MD_ReferenceSystem [0..1] |Optional
+|lineage |Information about the provenance, source(s), and/or the production process(es) applied to the training dataset.|LI_Lineage [0..*] |Optional
 |tasks |Task description of the training dataset. |AI_Task [1..*] |Mandatory
 |labeling |Provenance information of how the training dataset is labeled. |AI_Labeling [0..*] |Optional
 |quality |Quality information of the training dataset. |DataQuality [0..*] |Optional
@@ -68,6 +71,8 @@ Example:
    "keywords": ["Remote Sensing", "Scene Classification"],
    "numberOfClasses": 19,
    "classes": [{"key":"Airport","value":null}, {"key":"Beach","value":null}, {"key":"Bridge","value":null}, {"key":"Commercial","value":null}, {"key":"Desert","value":null}, {"key":"Farmland","value":null}, {"key":"footballField","value":null}, {"key":"Forest","value":null}, {"key":"Industrial","value":null}, {"key":"Meadow","value":null}, {"key":"Mountain","value":null}, {"key":"Park","value":null}, {"key":"Parking","value":null}, {"key":"Pond","value":null}, {"key":"Port","value":null}, {"key":"railwayStation","value":null}, {"key":"Residential","value":null}, {"key":"River","value":null}, {"key":"Viaduct","value":null}],
+   "extent": [-180, -90, 180, 90],
+   "referenceSystem": {"referenceSystemIdentifier": "EPSG:4326"},
    "tasks": [{"type": "AI_EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
    "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
  }
@@ -76,7 +81,7 @@ If the optional element AI_MetricsInLiterature is specified, this element is enc
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 12 |/req/aitrainingdataset/metricsinliterature
+|Requirement 15 |/req/aitrainingdataset/metricsinliterature
 
 Each AI_MetricsInLiterature value SHALL implement the Mandatory properties shown in Table 3.
 |===
@@ -102,7 +107,7 @@ The AI_EOTrainingDataset object is encoded as a JSON object with properties show
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 13 |/req/aitrainingdataset/eotrainingdataset
+|Requirement 16 |/req/aitrainingdataset/eotrainingdataset
 
 Each AI_EOTrainingDataset object SHALL implement the Mandatory properties both shown in Table 2 and Table 4.
 |===
@@ -112,8 +117,7 @@ Each AI_EOTrainingDataset object SHALL implement the Mandatory properties both s
 |===
 |JSON Property |Definition |Data type and values |Obligation
 |type |Type of the training dataset. |"AI_EOTrainingDataset" |Mandatory
-|extent |Spatial extent of the EO training dataset. |EX_Extent [0..1] |Optional
-|bands |Bands description of the images used in the EO training dataset. |MD_Band [0..*] |Optional
+|bands |Description of the image bands used in the EO training dataset. |MD_Band [0..*] |Optional
 |imageSize |Size of the images used in the EO training dataset. |ChracterString [0..1] |Optional
 |===
 
@@ -131,6 +135,7 @@ Example:
    "keywords": ["Remote Sensing", "Scene Classification"],
    "numberOfClasses": 19,
    "extent": [-180, -90, 180, 90],
+   "referenceSystem": {"referenceSystemIdentifier": "EPSG:4326"},
    "bands": [
       {"name": [{"code": "red"}]},
       {"name": [{"code": "green"}]},

@@ -26,7 +26,7 @@ The DateTime is encoded as a text string.
 |===
 |Requirement 2 |/req/base/jsonbasetype/datetime
 
-Each DateTime value SHALL be encoded as a text string defined in Date and Time on the Internet: Timestamps https://datatracker.ietf.org/doc/html/rfc3339#section-5.6[RFC 3339 Section 5.6].
+Each DateTime value SHALL be encoded as a text string defined in Date and Time on the Internet: Timestamps [https://datatracker.ietf.org/doc/html/rfc3339#section-5.6[RFC 3339 Section 5.6]], and SHALL support both the date-time and full-date formats. 
 
 RFC 3339 is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.
 
@@ -35,14 +35,8 @@ The specification of date and time in any JSON encoding of training set data SHA
 
 Examples:
 
- a)	"2002-05-30T09:00:00"
- b)	"2002-05-30T09:30:10.5" 
- c)	"2002-05-30T09:30:10Z"
- d)	"2002-09-24"
- e)	"2002-09-24Z"
- f)	"09:30:10"
- g)	"09:30:10.5"
- h)	"09:30:10Z"
+ a)	"2002-05-30T09:30:10Z"
+ b)	"2002-09-24"
 
 The NamedValue is encoded as a JSON object with two properties named "key" and "value". Typically, the "key" property represents a unique identifier or name for the value being described, while the "value" property contains the actual data associated with that identifier. The "key" element is an open field allowing for arbitrary keys to be used. The "value" element may be any types.
 
@@ -64,7 +58,7 @@ The URL is encoded as a text string.
 |===
 |Requirement 4 |/req/base/jsonbasetype/url
 
-Each URL value SHALL be encoded as a text string defined in Uniform Resource Identifier (URI): Generic Syntax https://datatracker.ietf.org/doc/html/rfc3986#section-4.1[RFC 3986 Section 4.1].
+Each URL value SHALL be encoded as a text string defined in Uniform Resource Identifier (URI): Generic Syntax [https://datatracker.ietf.org/doc/html/rfc3986#section-4.1[RFC 3986 Section 4.1]].
 |===
 
 Examples:

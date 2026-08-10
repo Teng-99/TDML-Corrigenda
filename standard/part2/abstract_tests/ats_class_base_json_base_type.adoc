@@ -19,7 +19,7 @@
 2+|Abstract Test 2
 |Test ID |/conf/base/jsonbasetype/datetime
 |Requirement |/req/base/jsonbasetype/datetime
-|Test purpose |Verify that JSON instance documents claiming conformance to this specification contain valid DateTime values according to Date and Time on the Internet: Timestamps https://datatracker.ietf.org/doc/html/rfc3339#section-5.6[RFC 3339 Section 5.6].
+|Test purpose |Verify that JSON instance documents claiming conformance to this specification contain valid DateTime values according to Date and Time on the Internet: Timestamps [https://datatracker.ietf.org/doc/html/rfc3339#section-5.6[RFC 3339 Section 5.6]].
 |Test method |Inspect the instance document to verify the above requirement.
 |===
 
@@ -37,6 +37,6 @@
 2+|Abstract Test 4
 |Test ID |/conf/base/jsonbasetype/url
 |Requirement |/req/base/jsonbasetype/url
-|Test purpose |Verify that JSON instance documents claiming conformance to this specification contain valid URL values according to Uniform Resource Identifier (URI): Generic Syntax https://datatracker.ietf.org/doc/html/rfc3986#section-4.1[RFC 3986 Section 4.1]. A URL value can be absolute or relative and may have an optional fragment identifier.
+|Test purpose |Verify that JSON instance documents claiming conformance to this specification contain valid URL values according to Uniform Resource Identifier (URI): Generic Syntax [https://datatracker.ietf.org/doc/html/rfc3986#section-4.1[RFC 3986 Section 4.1]]. A URL value can be absolute or relative and may have an optional fragment identifier.
 |Test method |Inspect the instance document to verify the above requirement.
 |===

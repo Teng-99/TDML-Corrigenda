@@ -7,7 +7,7 @@
 
 [width="100%",cols="20%,80%",]
 |===
-2+|Abstract Test 10
+2+|Abstract Test 13
 |Test ID |/conf/base/geospatialtype/feature
 |Requirement |/req/base/geospatialtype/feature
 |Test purpose |Verify that instance documents using the Feature JSON objects validate against the JSON schema specified in https://geojson.org/schema/Feature.json.
