@@ -1,20 +1,22 @@
-[width="100%",cols="20%,80%",options="header",]
+[width="100%",cols="20%,80%",options="header,unnumbered"]
 |===
 2+|*Requirements class* 
 2+|/req/base/isoqualitytype
 |Dependency |JSON
-|Requirement 12 |/req/base/isoqualitytype/element
+|Requirement 12|/req/base/isoqualitytype/element
 |===
 
-The QualityElement object is encoded as a JSON object with properties shown in Table 1.
+The QualityElement object is encoded as a JSON object with properties shown in <<table-qualityelement-properties>>.
 
-[width="100%",cols="20%,80%",]
+[width="100%",cols="20%,80%",options="unnumbered"]
 |===
-|Requirement 12 |/req/base/isoqualitytype/element
+|Requirement 12
+a|/req/base/isoqualitytype/element
 
-Each QualityElement value SHALL be encoded as a JSON object with properties shown in Table 1.
+Each QualityElement value SHALL be encoded as a JSON object with properties shown in <<table-qualityelement-properties>>.
 |===
 
+[[table-qualityelement-properties]]
 .QualityElement properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
@@ -27,14 +29,16 @@ Each QualityElement value SHALL be encoded as a JSON object with properties show
 
 Example:
 
+[source%unnumbered,json]
+----
  {
    "type": "FormatConsistency",
    "measure": {
       "measureDescription": "Percentage of training samples with inconsistent image format"
    },
-   "evaluationMethod": {
+   "evaluationMethod": [{
       "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with an inconsistent format"
-   },
+   }],
    "result": [
       {
          "quantitativeResult": {
@@ -46,3 +50,4 @@ Example:
       }
    ]
  }
+----

@@ -1,25 +1,27 @@
-[width="100%",cols="20%,80%",options="header",]
+[width="100%",cols="20%,80%",options="header,unnumbered"]
 |===
 2+|*Requirements class* 
 2+|/req/ailabeling
 |Dependency |JSON
 |Dependency |/req/base/jsonbasetype
 |Dependency |/req/base/isometadatatype
-|Requirement 27 |/req/ailabeling/labeling
-|Requirement 28 |/req/ailabeling/labeler
-|Requirement 29 |/req/ailabeling/labelingprocedure
-|Requirement 30 |/req/ailabeling/labelingmethodcode
+|Requirement 27|/req/ailabeling/labeling
+|Requirement 28|/req/ailabeling/labeler
+|Requirement 29|/req/ailabeling/labelingprocedure
+|Requirement 30|/req/ailabeling/labelingmethodcode
 |===
 
-The AI_Labeling object is encoded as a JSON object with properties shown in Table 13.
+The AI_Labeling object is encoded as a JSON object with properties shown in <<table-ai-labeling-properties>>.
 
-[width="100%",cols="20%,80%",]
+[width="100%",cols="20%,80%",options="unnumbered"]
 |===
-|Requirement 27 |/req/ailabeling/labeling
+|Requirement 27
+a|/req/ailabeling/labeling
 
-Each AI_Labeling object SHALL implement the Mandatory properties shown in Table 13.
+Each AI_Labeling object SHALL implement the Mandatory properties shown in <<table-ai-labeling-properties>>.
 |===
 
+[[table-ai-labeling-properties]]
 .AI_Labeling properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
@@ -34,6 +36,8 @@ Each AI_Labeling object SHALL implement the Mandatory properties shown in Table 
 
 Example:
 
+[source%unnumbered,json]
+----
  {
    "type": "AI_Labeling",
    "id": "0",
@@ -47,16 +51,19 @@ Example:
    "labelers": [{..}],
    "procedure": {..}
  }
+----
 
-The AI_Labeler object is encoded as a JSON object with properties as shown in Table 14.
+The AI_Labeler object is encoded as a JSON object with properties as shown in <<table-ai-labeler-properties>>.
 
-[width="100%",cols="20%,80%",]
+[width="100%",cols="20%,80%",options="unnumbered"]
 |===
-|Requirement 28 |/req/ailabeling/labeler
+|Requirement 28
+a|/req/ailabeling/labeler
 
-Each AI_Labeler object SHALL implement the Mandatory properties shown in Table 14.
+Each AI_Labeler object SHALL implement the Mandatory properties shown in <<table-ai-labeler-properties>>.
 |===
 
+[[table-ai-labeler-properties]]
 .AI_Labeler properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
@@ -68,21 +75,26 @@ Each AI_Labeler object SHALL implement the Mandatory properties shown in Table 1
 
 Example:
 
+[source%unnumbered,json]
+----
  {
    "type": "AI_Labeler",
    "id": "0",
    "name": "Tom"
  }
+----
 
-An AI_LabelingProcedure object is encoded as a JSON object with properties as shown in Table 15.
+An AI_LabelingProcedure object is encoded as a JSON object with properties as shown in <<table-ai-labelingprocedure-properties>>.
 
-[width="100%",cols="20%,80%",]
+[width="100%",cols="20%,80%",options="unnumbered"]
 |===
-|Requirement 29 |/req/ailabeling/labelingprocedure
+|Requirement 29
+a|/req/ailabeling/labelingprocedure
 
-Each AI_LabelingProcedure object SHALL implement the Mandatory properties shown in Table 15.
+Each AI_LabelingProcedure object SHALL implement the Mandatory properties shown in <<table-ai-labelingprocedure-properties>>.
 |===
 
+[[table-ai-labelingprocedure-properties]]
 .AI_LabelingProcedure properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
@@ -95,25 +107,32 @@ Each AI_LabelingProcedure object SHALL implement the Mandatory properties shown 
 
 Example:
 
+[source%unnumbered,json]
+----
  {
    "type": "AI_LabelingProcedure",
    "id": "0",
    "methods": ["manual"],
    "tools": ["ArcGIS"]
  }
+----
 
 The AI_LabelingMethodCode is encoded as a text string whose value is one of "manual", "semi-automatic", "automatic" or "unknown".
 
-[width="100%",cols="20%,80%",]
+[width="100%",cols="20%,80%",options="unnumbered"]
 |===
-|Requirement 30 |/req/ailabeling/labelingmethodcode
+|Requirement 30
+a|/req/ailabeling/labelingmethodcode
 
 Each AI_LabelingMethodCode value SHALL be a text string whose value is one of "manual", "semi-automatic", "automatic" or "unknown".
 |===
 
 Examples:
 
+[source%unnumbered,text]
+----
  a)	"manual" 
  b)	"semi-automatic"
  c)	"automatic"
  d)	"unknown"
+----

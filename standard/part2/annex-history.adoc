@@ -1,7 +1,9 @@
-[appendix]
+[appendix,obligation=informative]
 [[annex-history]]
-== Revision History (Informative)
+== Revision History
 
+.Revision history
+[%unnumbered]
 [width="100%",cols="15%,15%,15%,15%,40%",options="header"]
 |===
 |Date |Release |Author | Paragraph modified |Description

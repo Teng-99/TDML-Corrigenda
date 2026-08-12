@@ -9,8 +9,9 @@
 :edition: 1.0
 :received-date: 2024-06-15
 :issued-date: 2024-08-27
+:published-date: 2025-02-10
 :copyright-year: 2025
-:external-id: http://www.opengis.net/doc/is/trainingdml-ai-2/1.0
+:external-id: http://www.opengis.net/doc/is/tdml-part2/1.0
 :docnumber: 24-006r4
 :fullname: Peng Yue
 :role: editor
@@ -22,9 +23,9 @@
 :submitting-organizations: Wuhan University; Luoyao Information Technology Co., Ltd; Pixalytics Ltd; WiSC Enterprises; George Mason University; Laboratoire d'Informatique de Grenoble; Wuhan University of Technology; Hubei University; Chongqing Changan Zhitu Technology Co., Ltd
 :mn-document-class: ogc
 :mn-output-extensions: html
+:htmlstylesheet-override: ./part2-html-overrides.css
 :local-cache-only:
 :pdf-uri: ./tdmlpart2.pdf
-:source-highlighter: pygments
 
 ////
 Make sure to complete each included document

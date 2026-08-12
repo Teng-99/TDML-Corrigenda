@@ -1,4 +1,4 @@
-[width="100%",cols="20%,80%",options="header",]
+[width="100%",cols="20%,80%",options="header,unnumbered"]
 |===
 2+|*Requirements class* 
 2+|/req/aitrainingdata
@@ -8,20 +8,22 @@
 |Dependency |/req/ailabel
 |Dependency |/req/ailabeling
 |Dependency |/req/aidataquality
-|Requirement 17 |/req/aitrainingdata/trainingdata
-|Requirement 18 |/req/aitrainingdata/trainingtypecode
-|Requirement 19 |/req/aitrainingdata/eotrainingdata
+|Requirement 17|/req/aitrainingdata/trainingdata
+|Requirement 18|/req/aitrainingdata/trainingtypecode
+|Requirement 19|/req/aitrainingdata/eotrainingdata
 |===
 
-The AI_TrainingData object is encoded as a JSON object with properties shown in Table 5.
+The AI_TrainingData object is encoded as a JSON object with properties shown in <<table-ai-trainingdata-properties>>.
 
-[width="100%",cols="20%,80%",]
+[width="100%",cols="20%,80%",options="unnumbered"]
 |===
-|Requirement 17 |/req/aitrainingdataset/trainingdata
+|Requirement 17
+a|/req/aitrainingdata/trainingdata
 
-Each AI_TrainingData object SHALL implement the Mandatory properties shown in Table 5.
+Each AI_TrainingData object SHALL implement the Mandatory properties shown in <<table-ai-trainingdata-properties>>.
 |===
 
+[[table-ai-trainingdata-properties]]
 .AI_TrainingData properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
@@ -42,11 +44,12 @@ Each AI_TrainingData object SHALL implement the Mandatory properties shown in Ta
 
 Example:
 
+[source%unnumbered,json]
+----
  {
    "type": "AI_AbstractTrainingData",
    "id": "airport_01",
    "dataSources": [{"title": "googleEarth"}],
-   "dataURL": ["image/Airport/airport_01.jpg"],
    "extent": {
       "geographicElement": [{
           "westBoundLongitude": -171.76409,
@@ -58,32 +61,39 @@ Example:
   "dataTime": ["2002-05-30T09:30:10Z"],
   "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
  }
+----
 
 The AI_TrainingTypeCode is encoded as a text string whose value is one of "training", "validation", "test" or "retraining".
 
-[width="100%",cols="20%,80%",]
+[width="100%",cols="20%,80%",options="unnumbered"]
 |===
-|Requirement 18 |/req/aitrainingdataset/trainingtypecode
+|Requirement 18
+a|/req/aitrainingdata/trainingtypecode
 
 Each AI_TrainingTypeCode value SHALL be a text string whose value is one of "training", "validation", "test" or "retraining".
 |===
 
 Examples:
 
+[source%unnumbered,text]
+----
  a)	"training" 
  b)	"validation"
  c)	"test" 
  d)	"retraining"
+----
 
-The AI_EOTrainingData object is encoded as a JSON object with properties both shown in Table 5 and Table 6.
+The AI_EOTrainingData object is encoded as a JSON object with properties both shown in <<table-ai-trainingdata-properties>> and <<table-ai-eotrainingdata-properties>>.
 
-[width="100%",cols="20%,80%",]
+[width="100%",cols="20%,80%",options="unnumbered"]
 |===
-|Requirement 19 |/req/aitrainingdataset/eotrainingdata
+|Requirement 19
+a|/req/aitrainingdata/eotrainingdata
 
-Each AI_EOTrainingData object SHALL implement the Mandatory properties as defined in Table 5 and Table 6.
+Each AI_EOTrainingData object SHALL implement the Mandatory properties as defined in <<table-ai-trainingdata-properties>> and <<table-ai-eotrainingdata-properties>>.
 |===
 
+[[table-ai-eotrainingdata-properties]]
 .AI_EOTrainingData properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
@@ -94,6 +104,8 @@ Each AI_EOTrainingData object SHALL implement the Mandatory properties as define
 
 Example:
 
+[source%unnumbered,json]
+----
  {
    "type": "AI_EOTrainingData",
    "id": "airport_01",
@@ -111,3 +123,4 @@ Example:
    "spatialResolution": {"distance":{"value": "0.5", "uom": "m"}},
    "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
  }
+----
