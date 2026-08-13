@@ -16,7 +16,7 @@ The first requirement is that a TrainingDML-AI JSON document is a valid JSON doc
 |Requirement 1
 a|/req/base/jsonbasetype/json
 
-An instance SHALL be a conformant JSON document, as defined in ECMA-404
+An instance SHALL be a conformant JSON document, as defined in <<ISOIEC21778>>
 |===
 
 JSON has a limited range of built-in types (http://json.org/). The following requirements provide standard JSON representations of additional types required across all requirements within this specification.

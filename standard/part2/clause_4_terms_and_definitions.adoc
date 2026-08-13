@@ -71,7 +71,7 @@ SOURCE: W3C (https://www.w3.org/TR/prov-overview/)
 [[quality-definition]]
 === Quality
 
-degree to which a set of inherent characteristics of an object fulfils requirements [ISO 9000:2015, 3.6.2, modified－Notes 1 and 2 to entry have been deleted]. Quality of training data (such as data imbalance and mislabeling) can impact the performance of AI/ML models.
+degree to which a set of inherent characteristics of an object fulfils requirements [ISO 9000:2015, 3.6.2, modified — Notes 1 and 2 to entry have been deleted]. Quality of training data (such as data imbalance and mislabeling) can impact the performance of AI/ML models.
 
 SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
 
@@ -130,7 +130,7 @@ SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingD
 
 is a lightweight, text-based, language-independent syntax for defining data interchange formats. It was derived from the ECMAScript programming language but is programming language independent. JSON defines a small set of structuring rules for the portable representation of structured data.
 
-SOURCE: ECMA-404 The JSON data interchange syntax 2nd edition, December 2017
+SOURCE: <<ISOIEC21778>>
 
 [[json-schema-definition]]
 === JSON Schema

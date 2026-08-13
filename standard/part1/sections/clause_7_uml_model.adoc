@@ -58,7 +58,7 @@ include::../requirements/requirements_class_trainingdataset.adoc[]
 
 An AI training dataset is represented as AI_AbstractTrainingDataset. Each training sample in the dataset is represented as AI_AbstractTrainingData. A set of basic attributes are defined at the collection level for AI_AbstractTrainingDataset. These include the identification, authorship, time for creation and update, AI tasks, number of training samples (amountOfTrainingData), label semantics (classes recording the available semantic classes), number of label classes, and statistics of training samples in each class (statisticsInfo). These basic attributes at the collection level can also be seen as a minimum set of metadata to define a simple payload. In this context, payload means the actual content that will be transmitted on the Web. They can be mapped to the MD_Metadata entity properties in ISO 19115, and thus delegate the metadata description via a metadata association to existing metadata standards.
 
-The AI_EOTrainingDataset is defined to convey attributes specific to EO. For example, the data source (e.g., EO images), image size, band information, and spatial extent are defined in AI_EOTrainingDataset.
+The AI_EOTrainingDataset is defined to convey attributes specific to EO. For example, the image size and band information are defined in AI_EOTrainingDataset.
 
 The UML diagram of the AI_TrainingDataset is illustrated in <<figure-uml-trainingdataset>>.
 
@@ -98,7 +98,7 @@ include::../requirements/requirements_class_trainingdata.adoc[]
 
 The AI_AbstractTrainingData includes the source data and its corresponding labels, which focus on a compact modeling of individual training samples. When there is a need to identify the different uses/purposes, an optional attribute, the training type (training, validation, test, or retraining types), can be added at the individual level. The attribute datasetId helps identify samples from different training datasets.
 
-The AI_EOTrainingData is defined to convey attributes specific to EO. It provides additional attributes, including spatial extent and date/time of the source EO inputs.
+The AI_EOTrainingData is defined to convey attributes specific to EO. It provides additional attributes, including spatial resolution and urls of the source EO inputs.
 
 The UML diagram of the AI_TrainingData is illustrated in <<figure-uml-trainingdata>>.
 

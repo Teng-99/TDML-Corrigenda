@@ -7,7 +7,7 @@ The TrainingDML-AI UML model is the normative definition of the TrainingDML-AI C
 
 The following classes are defined in the ISO standards and used by the TrainingDML-AI Conceptual Model.
 
-==== Feature (from ISO 19107:2019)
+==== Feature (from ISO 19101-1:2014)
 
 .Metadata of Feature (Class)
 [width="100%",cols="34%,66%",options="",]
@@ -37,9 +37,9 @@ The following classes are defined in the ISO standards and used by the TrainingD
 |Stereotype |\<<DataType>>
 |===
 
-==== MD_Reference (from ISO 19115-1:2014)
+==== MD_ReferenceSystem (from ISO 19115-1:2014)
 
-.Metadata of MD_Reference (Class)
+.Metadata of MD_ReferenceSystem (Class)
 [width="100%",cols="34%,66%",options="",]
 |===
 |Definition |Information about the reference system.
@@ -62,7 +62,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 .Metadata of EX_Extent (DataType)
 [width="100%",cols="34%,66%",options="",]
 |===
-|Definition |EX_Extent is the extent of the resource electromagnetic spectrum.
+|Definition |EX_Extent is the extent of the resource.
 |Subclass of |None
 |Stereotype |\<<DataType>>
 |===
@@ -507,7 +507,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 .Metadata of AI_TDChangeset (Class)
 [width="100%",cols="20%,80%",options="",]
 |===
-|Definition |AI_TDChangeset
+|Definition |AI_TDChangeset represents a set of individual level changes (add, modify, and delete) of the training dataset.
 |Subclass of |None
 |Stereotype |\<<Class>>
 |===

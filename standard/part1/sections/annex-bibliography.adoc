@@ -5,11 +5,13 @@
 
 * [[[BIB-ISO19144-2-2023]]] ISO 19144-2:2023, Geographic information — Classification systems — Part 2: Land Cover Meta Language (LCML). https://www.iso.org/standard/81259.html
 
+* [[[BIB-ISO9000-2005]]] ISO 9000:2005, Quality management systems — Fundamentals and vocabulary. https://www.iso.org/standard/42180.html
 
-* [[[BIB-OGC18-038r2]]] Landry, T., ed., 2018. OGC Testbed-14: Machine Learning Engineering Report, OGC 18-038r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/18-038r2.html
+* [[[BIB-ISO19109]]] ISO 19109, Geographic information — Rules for application schema. https://www.iso.org/standard/59193.html
 
-* [[[BIB-OGC19-027r2]]] Meek, S., ed., 2019. OGC Testbed-15: Machine Learning Engineering Report, OGC 19-027r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/19-027r2.html
+* [[[BIB-PROV-Overview]]] Groth, P., Moreau, L., eds., 2013. PROV-Overview: An Overview of the PROV Family of Documents. W3C Note. https://www.w3.org/TR/prov-overview/
 
-* [[[BIB-OGC20-018]]] Schumann, G., ed., 2020. OGC Testbed-16: Machine Learning Engineering Report, OGC 20-018. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/20-015r2.html
+* [[[BIB-OGC-Compliance]]], Open Geospatial Consortium, n.d. How Our Compliance Program Works. https://www.ogc.org/how-our-compliance-program-works/
+
 
 * [[[BIB-YUE2022]]] Yue, P., Shangguan, B., Hu, L., Jiang, L., Zhang, C., Cao, Z., Pan, Y., 2022. Towards a training data model for artificial intelligence in earth observation. International Journal of Geographical Information Science, 1-25. https://doi.org/10.1080/13658816.2022.2087223
