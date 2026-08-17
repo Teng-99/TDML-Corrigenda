@@ -12,7 +12,7 @@
 :published-date: 2025-02-10
 :copyright-year: 2025
 :external-id: http://www.opengis.net/doc/is/tdml-part3/1.0
-:docnumber: 24-007r1
+:docnumber: 24-007r4
 :fullname: Peng Yue
 :role: editor
 :fullname_2: Ruixiang Liu
