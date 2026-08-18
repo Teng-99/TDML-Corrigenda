@@ -29,7 +29,7 @@ Each AI_Labeling object SHALL implement the Mandatory properties shown in <<tabl
 |type |Type of the labeling object. |"AI_Labeling" |Mandatory
 |id |Identifier of the labeling. |CharacterString [1..1] |Mandatory
 |scope |Description of the scope of the labeling. |MD_Scope [1..1] |Mandatory
-|labelingTime |Date and time at which the labelling procedure was carried out. |DateTime [0..1] |Optional
+|labelingTime |Date and time at which the labeling procedure was carried out. |DateTime [0..1] |Optional
 |labelers |Labelers of the labeling activity. |AI_Labeler [0..*] |Optional
 |procedure |Procedure used in the labeling activity. |AI_LabelingProcedure [0..1] |Optional
 |===

@@ -1,4 +1,4 @@
 [bibliography]
 == Bibliography
 
-* [[[BIB-Open Geospatial Consortium]]],  How Our Compliance Program Works, n.d. Open Geospatial Consortium [online]. Available from: https://www.ogc.org/how-our-compliance-program-works/ (accessed 11.3.24).
+* [[[BIB-OGC-Compliance,nofetch(OGC Compliance Testing website)]]],  How Our Compliance Program Works, n.d. Open Geospatial Consortium [online]. Available from: https://www.ogc.org/how-our-compliance-program-works/ (accessed 11.3.24).

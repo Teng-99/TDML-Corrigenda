@@ -27,7 +27,7 @@ test-method:: Validate the instance document against the ai_label.xsd schema to 
 [%metadata]
 identifier:: /conf/ailabel/scenelabel
 target:: /req/ailabel/scenelabel
-test-purpose:: VVerify that instance documents using the AI_SceneLabel XML elements listed in <<table-ai-scenelabel-properties>> validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_sceneLabel.xsd.
+test-purpose:: Verify that instance documents using the AI_SceneLabel XML elements listed in <<table-ai-scenelabel-properties>> validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_sceneLabel.xsd.
 test-method:: Validate the instance document against the ai_sceneLabel.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 ====
 

@@ -115,7 +115,7 @@ Each AI_EOTrainingData object SHALL implement the Mandatory properties as define
 |===
 |XML Property |Definition |Data type and values |Obligation
 |type |Type of the EO training data. |"AI_EOTrainingData" |Mandatory
-|spatialResolution |Spatial resolution of the individual EO training sample. |DatMD_ResolutioneTime [0..1] |Optional
+|spatialResolution |Spatial resolution of the individual EO training sample. |MD_Resolution [0..1] |Optional
 |dataURL |URLs of the EO data, including both relative and absolute paths, which can encompass local paths, network addresses, and more. |URI [1..*] |Mandatory
 |===
 

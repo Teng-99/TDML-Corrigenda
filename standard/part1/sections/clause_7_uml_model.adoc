@@ -86,9 +86,8 @@ include::../requirements/requirement_trainingdataset.adoc[]
 [width="100%",cols="34%,66%",options="header",]
 |===
 |Name |Description
-|
-AI_MetricsInLiterature
-\<<DataType>>
+|AI_MetricsInLiterature +
+«DataType»
 |AI_MetricsInLiterature records results of performance metrics achieved by AI/ML algorithms in the peer-reviewed literature.
 |===
 
@@ -132,8 +131,8 @@ include::../requirements/requirement_trainingdata.adoc[]
 [width="100%",cols="34%,66%",options="header",]
 |===
 |Name |Description
-|AI_TrainingTypeCode
-\<<CodeList>>
+|AI_TrainingTypeCode +
+«CodeList»
 |AI_TrainingTypeCode is a code list used to identify whether the individual data element is used for different purposes.
 |===
 
@@ -205,8 +204,8 @@ include::../requirements/requirement_label.adoc[]
 [width="100%",cols="34%,66%",options="header",]
 |===
 |Name |Description
-|AI_ImageFormatCode
-\<<CodeList>>
+|AI_ImageFormatCode +
+«CodeList»
 |AI_ImageFormatCode is a code list used to specify the MIME type of an image.
 |===
 
@@ -253,8 +252,8 @@ include::../requirements/requirement_labeling.adoc[]
 [width="100%",cols="34%,66%",options="header",]
 |===
 |Name |Description
-|AI_LabelingMethodCode
-\<<CodeList>>
+|AI_LabelingMethodCode +
+«CodeList»
 |AI_LabelingMethodCode is a code list used to identify the methods used in the labeling procedure.
 |===
 

@@ -1,10 +1,4 @@
 [bibliography]
 == Bibliography
 
-* [[[BIB-Yue2023]]], Yue, P., ed., 2023. OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part1: Conceptual Model Standard, OGC 23-008r3. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/is/23-008r3/23-008r3.html
-* [[[BIB-ISO19107]]], ISO, 2019. ISO 19107: 2019. Geographic information — Spatial schema. https://www.iso.org/standard/66175.html
-* [[[BIB-OGC18-038r2]]], Landry, T., ed., 2018. OGC Testbed-14: Machine Learning Engineering Report, OGC 18-038r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/18-038r2.html
-* [[[BIB-OGC19-027r2]]], Meek, S., ed., 2019. OGC Testbed-15: Machine Learning Engineering Report, OGC 19-027r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/19-027r2.html
-* [[[BIB-OGC20-018]]], Schumann, G., ed., 2020. OGC Testbed-16: Machine Learning Training Data Engineering Report, OGC 20-018. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/20-015r2.html
-* [[[BIB-OGC-Compliance]]], Open Geospatial Consortium, n.d. How Our Compliance Program Works. https://www.ogc.org/how-our-compliance-program-works/
-* [[[BIB-YueEtAl2022]]], Yue, P., Shangguan, B., Hu, L., Jiang, L., Zhang, C., Cao, Z., Pan, Y., 2022. Towards a training data model for artificial intelligence in earth observation. International Journal of Geographical Information Science, 1-25. https://doi.org/10.1080/13658816.2022.2087223
+* [[[BIB-OGC-Compliance,nofetch(OGC Compliance Testing website)]]],  How Our Compliance Program Works, n.d. Open Geospatial Consortium [online]. Available from: https://www.ogc.org/how-our-compliance-program-works/ (accessed 11.3.24).
