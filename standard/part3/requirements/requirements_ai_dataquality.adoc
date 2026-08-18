@@ -20,7 +20,7 @@ Each AI_ClassBalanceDegree object SHALL implement the Mandatory properties as sh
 |===
 
 [[table-ai-classbalancedegree-properties]]
-.AI_ ClassBalanceDegree properties
+.AI_ClassBalanceDegree properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |XML Property |Definition |Data type and values |Obligation

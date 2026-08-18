@@ -270,68 +270,76 @@ Examples:
 
 [source%unnumbered,xml]
 ----
-<mrl:statement>
-	        <gco:CharacterString>
-	            The dataset was generated from high-resolution satellite imagery through a standardized preprocessing and manual labeling workflow for AI model training.
-	        </gco:CharacterString>
-	    </mrl:statement>
-	    <mrl:source>
-	        <mrl:LI_Source>
-	            <mrl:description>
-	                <gco:CharacterString>
-	                    High-resolution multispectral satellite imagery acquired in 2023 covering urban areas.
-	                </gco:CharacterString>
-	            </mrl:description>
-	            <mrl:sourceCitation>
-	                <mcc:CI_Citation>
-	                    <mcc:title>
-	                        <gco:CharacterString>
-	                            Urban Satellite Imagery Dataset 2023
-	                        </gco:CharacterString>
-	                    </mcc:title>
-	                </mcc:CI_Citation>
-	            </mrl:sourceCitation>
-	        </mrl:LI_Source>
-	    </mrl:source>
-	    <mrl:processStep>
-	        <mrl:LI_ProcessStep>
-	            <mrl:description>
-	                <gco:CharacterString>
-	                    Radiometric calibration and geometric correction were applied to the raw satellite images.
-	                </gco:CharacterString>
-	            </mrl:description>
-	            <mrl:rationale>
-	                <gco:CharacterString>
-	                    To ensure spatial alignment and consistent reflectance values for subsequent labeling.
-	                </gco:CharacterString>
-	            </mrl:rationale>
-	<mrl:stepDateTime>
-	<gml:TimeInstant>
-	<gml:timePosition>2023-06-15T10:00:00Z</gml:timePosition>
-	</gml:TimeInstant>
-	            </mrl:stepDateTime>
-	        </mrl:LI_ProcessStep>
-	    </mrl:processStep>
-	    <mrl:processStep>
-	        <mrl:LI_ProcessStep>
-	            <mrl:description>
-	                <gco:CharacterString>
-	                    Trained annotators manually labeled buildings and roads using a GIS-based annotation platform.
-	                </gco:CharacterString>
-	            </mrl:description>
-	            <mrl:rationale>
-	                <gco:CharacterString>
-	                    To generate high-quality ground truth data for supervised deep learning models.
-	                </gco:CharacterString>
-	            </mrl:rationale>
-	            <mrl:stepDateTime>
-	<gml:TimePeriod>
-	<gml:beginPosition>2023-06-20</gml:beginPosition>
-	                    <gml:endPosition>2023-07-10</gml:endPosition>
-	                </gml:TimePeriod>
-	            </mrl:stepDateTime>
-	        </mrl:LI_ProcessStep>
-	    </mrl:processStep>
+<mrl:LI_Lineage>
+    <mrl:statement>
+        <gco:CharacterString>
+            The dataset was generated from high-resolution satellite imagery through a standardized
+            preprocessing and manual labeling workflow for AI model training.
+        </gco:CharacterString>
+    </mrl:statement>
+    <mrl:source>
+        <mrl:LI_Source>
+            <mrl:description>
+                <gco:CharacterString>
+                    High-resolution multispectral satellite imagery acquired in 2023 covering urban
+                    areas.
+                </gco:CharacterString>
+            </mrl:description>
+            <mrl:sourceCitation>
+                <cit:CI_Citation>
+                    <cit:title>
+                        <gco:CharacterString>
+                            Urban Satellite Imagery Dataset 2023
+                        </gco:CharacterString>
+                    </cit:title>
+                </cit:CI_Citation>
+            </mrl:sourceCitation>
+        </mrl:LI_Source>
+    </mrl:source>
+    <mrl:processStep>
+        <mrl:LI_ProcessStep>
+            <mrl:description>
+                <gco:CharacterString>
+                    Radiometric calibration and geometric correction were applied to the raw
+                    satellite
+                    images.
+                </gco:CharacterString>
+            </mrl:description>
+            <mrl:rationale>
+                <gco:CharacterString>
+                    To ensure spatial alignment and consistent reflectance values for subsequent
+                    labeling.
+                </gco:CharacterString>
+            </mrl:rationale>
+            <mrl:stepDateTime>
+                <gml:TimeInstant>
+                    <gml:timePosition>2023-06-15T10:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </mrl:stepDateTime>
+        </mrl:LI_ProcessStep>
+    </mrl:processStep>
+    <mrl:processStep>
+        <mrl:LI_ProcessStep>
+            <mrl:description>
+                <gco:CharacterString>
+                    Trained annotators manually labeled buildings and roads using a GIS-based
+                    annotation
+                    platform.
+                </gco:CharacterString>
+            </mrl:description>
+            <mrl:rationale>
+                <gco:CharacterString>
+                    To generate high-quality ground truth data for supervised deep learning models.
+                </gco:CharacterString>
+            </mrl:rationale>
+            <mrl:stepDateTime>
+                <gml:TimePeriod>
+                    <gml:beginPosition>2023-06-20</gml:beginPosition>
+                    <gml:endPosition>2023-07-10</gml:endPosition>
+                </gml:TimePeriod>
+            </mrl:stepDateTime>
+        </mrl:LI_ProcessStep>
+    </mrl:processStep>
 </mrl:LI_Lineage>
 ----
 

@@ -23,6 +23,7 @@
 :submitting-organizations: Wuhan University; Luoyao Information Technology Co., Ltd; Pixalytics Ltd; WiSC Enterprises; George Mason University; Laboratoire d'Informatique de Grenoble; Wuhan University of Technology; Hubei University; Chongqing Changan Zhitu Technology Co., Ltd
 :mn-document-class: ogc
 :mn-output-extensions: html
+:toc-figures: false
 :toc-tables: false
 :toc-requirements: false
 :htmlstylesheet-override: ./part2-html-overrides.css

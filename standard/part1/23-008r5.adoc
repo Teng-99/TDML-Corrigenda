@@ -17,10 +17,13 @@
 :submitting-organizations: Wuhan University; Pixalytics Ltd; WiSC Enterprises; George Mason University; Laboratoire d'Informatique de Grenoble; South Digital Technology Co., Ltd; Wuhan University of Technology; Hubei University; Chongqing Changan Automobile Co., Ltd
 :mn-document-class: ogc
 :mn-output-extensions: html,pdf
+:toc-figures: false
+:toc-tables: false
+:toc-requirements: false
 :local-cache-only:
 :data-uri-image:
 :pdf-uri: ./23-008r5.pdf
-:edition: 1.0
+:edition: 1.0.1
 
 
 ////

@@ -77,4 +77,5 @@ Examples:
 ----
  a) "http://www.opengeospatial.org"
  b) "/file.txt"
+ c) "./dataset/file.txt"
 ----

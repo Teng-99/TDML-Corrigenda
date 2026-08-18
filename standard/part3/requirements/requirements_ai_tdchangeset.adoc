@@ -20,7 +20,7 @@ Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in 
 |===
 
 [[table-ai-tdchangeset-properties]]
-.AI_ TDChangeset properties
+.AI_TDChangeset properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |XML Property |Definition |Data type and values |Obligation

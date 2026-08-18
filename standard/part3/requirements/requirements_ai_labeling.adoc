@@ -118,7 +118,7 @@ Example:
 ----
 
 
-The AI_LabelingMethodCode is encoded as a text string whose value is one of “manual”, “semi-automatic”, “automatic” or “unkonwn”.
+The AI_LabelingMethodCode is encoded as a text string whose value is one of “manual”, “semi-automatic”, “automatic” or “unknown”.
 
 [width="100%",cols="20%,80%",options="unnumbered"]
 |===
