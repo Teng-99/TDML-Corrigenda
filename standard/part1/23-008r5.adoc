@@ -4,7 +4,7 @@
 :lang: en
 :status: approved
 :committee: technical
-:draft: 1.0
+:draft: 1.0.1
 :external-id: http://www.opengis.net/doc/is/trainingdml-ai-1/1.0
 :docnumber: 23-008r5
 :received-date: 2023-01-27
