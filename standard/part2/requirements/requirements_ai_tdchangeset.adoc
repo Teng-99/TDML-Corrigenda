@@ -38,12 +38,66 @@ Example:
 
 [source%unnumbered,json]
 ----
- {
-   "type": "AI_TDChangeset",
-   "id": "changeset-dota_v1.5",
-   "datasetId": "dota_v1.5",
-   "createdTime": "2019-01-01",
-   "changeCount": 9, 
-   "modify": [{"type": "AI_EOTrainingData", "id": "P1228", "dataSources": [{"title": "GF"}], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "AI_ObjectLabel", "class": "ship", "object": {"type": "Feature", "properties": {}, "geometry": {"type": "Polygon", "coordinates": [[[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]]}},"bboxType": "Horizontal BBox"}, …]}]
- }
+{
+  "type": "AI_TDChangeset",
+  "id": "changeset-dota_v1.5",
+  "datasetId": "dota_v1.5",
+  "createdTime": "2019-01-01",
+  "changeCount": 9,
+  "modify": [
+    {
+      "type": "AI_EOTrainingData",
+      "id": "P1228",
+      "dataSources": [
+        {
+          "title": "GF"
+        }
+      ],
+      "dataURL": [
+        "train/images/P1228.png"
+      ],
+      "numberOfLabels": 50,
+      "trainingType": "training",
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "ship",
+          "object": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    2306.0,
+                    729.0
+                  ],
+                  [
+                    2330.0,
+                    729.0
+                  ],
+                  [
+                    2330.0,
+                    744.0
+                  ],
+                  [
+                    2306.0,
+                    744.0
+                  ],
+                  [
+                    2306.0,
+                    729.0
+                  ]
+                ]
+              ]
+            }
+          },
+          "bboxType": "Horizontal BBox"
+        },
+        …
+      ]
+    }
+  ]
+}
 ----

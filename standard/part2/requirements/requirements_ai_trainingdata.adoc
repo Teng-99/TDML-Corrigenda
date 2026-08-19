@@ -46,21 +46,34 @@ Example:
 
 [source%unnumbered,json]
 ----
- {
-   "type": "AI_AbstractTrainingData",
-   "id": "airport_01",
-   "dataSources": [{"title": "googleEarth"}],
-   "extent": {
-      "geographicElement": [{
-          "westBoundLongitude": -171.76409,
-          "eastBoundLongitude": -171.56578,
-          "southBoundLatitude": -14.42443,
-          "northBoundLatitude": -14.32568
-        }]
+{
+  "type": "AI_AbstractTrainingData",
+  "id": "airport_01",
+  "dataSources": [
+    {
+      "title": "googleEarth"
+    }
+  ],
+  "extent": {
+    "geographicElement": [
+      {
+        "westBoundLongitude": -171.76409,
+        "eastBoundLongitude": -171.56578,
+        "southBoundLatitude": -14.42443,
+        "northBoundLatitude": -14.32568
+      }
+    ]
   },
-  "dataTime": ["2002-05-30T09:30:10Z"],
-  "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
- }
+  "dataTime": [
+    "2002-05-30T09:30:10Z"
+  ],
+  "labels": [
+    {
+      "type": "AI_SceneLabel",
+      "class": "Airport"
+    }
+  ]
+}
 ----
 
 The AI_TrainingTypeCode is encoded as a text string whose value is one of "training", "validation", "test" or "retraining".
@@ -106,21 +119,41 @@ Example:
 
 [source%unnumbered,json]
 ----
- {
-   "type": "AI_EOTrainingData",
-   "id": "airport_01",
-   "dataSources": [{"title": "googleEarth"}],
-   "extent": {
-      "geographicElement": [{
-         "westBoundLongitude": -171.76409,
-         "eastBoundLongitude": -171.56578,
-         "southBoundLatitude": -14.42443,
-         "northBoundLatitude": -14.32568
-      }]
-   },
-   "dataTime": ["2002-05-30T09:30:10Z"],
-   "dataURL": ["image/Airport/airport_01.jpg"],
-   "spatialResolution": {"distance":{"value": "0.5", "uom": "m"}},
-   "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
- }
+{
+  "type": "AI_EOTrainingData",
+  "id": "airport_01",
+  "dataSources": [
+    {
+      "title": "googleEarth"
+    }
+  ],
+  "extent": {
+    "geographicElement": [
+      {
+        "westBoundLongitude": -171.76409,
+        "eastBoundLongitude": -171.56578,
+        "southBoundLatitude": -14.42443,
+        "northBoundLatitude": -14.32568
+      }
+    ]
+  },
+  "dataTime": [
+    "2002-05-30T09:30:10Z"
+  ],
+  "dataURL": [
+    "image/Airport/airport_01.jpg"
+  ],
+  "spatialResolution": {
+    "distance": {
+      "value": "0.5",
+      "uom": "m"
+    }
+  },
+  "labels": [
+    {
+      "type": "AI_SceneLabel",
+      "class": "Airport"
+    }
+  ]
+}
 ----

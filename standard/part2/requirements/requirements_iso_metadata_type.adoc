@@ -29,9 +29,25 @@ Examples:
 
 [source%unnumbered,json]
 ----
- a)	{"name": [{"code": "red"}]}
- b)	{"name": [{"code": "B4"}]}
- c)	{"boundMax": 690, "boundMin": 630, "boundUnits": "nm"}
+a) {
+     "name": [
+       {
+         "code": "red"
+       }
+     ]
+   }
+b) {
+     "name": [
+       {
+         "code": "B4"
+       }
+     ]
+   }
+c) {
+     "boundMax": 690,
+     "boundMin": 630,
+     "boundUnits": "nm"
+   }
 ----
 
 The EX_Extent is encoded as a GeoJSON bounding box or a JSON Object.
@@ -56,29 +72,58 @@ Examples:
 
 [source%unnumbered,json]
 ----
- a)	[120.0, 30.0, 130.0, 40.0]
- b)	[120.0, 30.0, 10.0, 130.0, 40.0, 20.0]
- c)	{
-        "geographicElement": [{
-            "westBoundLongitude": -171.76409,
-            "eastBoundLongitude": -157.86768,
-            "southBoundLatitude": -14.42443,
-            "northBoundLatitude": 21.31573
-        }],
-        "crs": "EPSG:4326"
-    }
- d)	{
- 	    "geographicElement": [{
-            "polygon": [{
-                "exterior": {
-                    "LinearRing": {
-                        "posList": [51.556272, -0.2803943, 51.5562758, -0.2787397, 51.5556539, -0.278736, 51.5556501, -0.2803906, 51.556272, -0.2803943]
-                    }
-                }
-            }]
-        }],
-        "crs": "EPSG:4326"
-    }
+a) [
+     120.0,
+     30.0,
+     130.0,
+     40.0
+   ]
+b) [
+     120.0,
+     30.0,
+     10.0,
+     130.0,
+     40.0,
+     20.0
+   ]
+c) {
+     "geographicElement": [
+       {
+         "westBoundLongitude": -171.76409,
+         "eastBoundLongitude": -157.86768,
+         "southBoundLatitude": -14.42443,
+         "northBoundLatitude": 21.31573
+       }
+     ],
+     "crs": "EPSG:4326"
+   }
+d) {
+     "geographicElement": [
+       {
+         "polygon": [
+           {
+             "exterior": {
+               "LinearRing": {
+                 "posList": [
+                   51.556272,
+                   -0.2803943,
+                   51.5562758,
+                   -0.2787397,
+                   51.5556539,
+                   -0.278736,
+                   51.5556501,
+                   -0.2803906,
+                   51.556272,
+                   -0.2803943
+                 ]
+               }
+             }
+           }
+         ]
+       }
+     ],
+     "crs": "EPSG:4326"
+   }
 ----
 
 The CI_Citation is encoded as a JSON object.
@@ -97,7 +142,17 @@ Example:
 
 [source%unnumbered,json]
 ----
- {"title": "Open Geospatial Consortium", "alternateTitle": ["OGC"], "identifier": [{"code": "https://portal.ogc.org/files/?artifact_id=104605&version=1"}]}
+{
+  "title": "Open Geospatial Consortium",
+  "alternateTitle": [
+    "OGC"
+  ],
+  "identifier": [
+    {
+      "code": "https://portal.ogc.org/files/?artifact_id=104605&version=1"
+    }
+  ]
+}
 ----
 
 The MD_Scope is encoded as a JSON object.
@@ -116,43 +171,68 @@ Examples:
 
 [source%unnumbered,json]
 ----
- a)	{
-        "level": "dataset", 
-        "levelDescription": [{
-            "dataset": "whu_rs19"
-        }]
-    }
- b)	{
-        "level": "attribute",
-        "levelDescription": [{
-            "attributes": "completeness"
-        }]
-    }
- c)	{
-        "level": "coverage",
-        "extent": [{
-            "geographicElement": [{
-                "westBoundLongitude": -171.76409,
-                "eastBoundLongitude": -157.86768,
-                "southBoundLatitude": -14.42443,
-                "northBoundLatitude": 21.31573
-            }]
-        }]
-    }
- d)	{
-        "level": "feature",
-        "extent": [{
-            "geographicElement": [{
-                "polygon": [{
-                    "exterior": {
-                        "LinearRing": {
-                            "posList": [51.556272, -0.2803943, 51.5562758, -0.2787397, 51.5556539, -0.278736, 51.5556501, -0.2803906, 51.556272, -0.2803943]
-                        }
-                    }
-                }]
-            }]
-        }]
-    }
+a) {
+     "level": "dataset",
+     "levelDescription": [
+       {
+         "dataset": "whu_rs19"
+       }
+     ]
+   }
+b) {
+     "level": "attribute",
+     "levelDescription": [
+       {
+         "attributes": "completeness"
+       }
+     ]
+   }
+c) {
+     "level": "coverage",
+     "extent": [
+       {
+         "geographicElement": [
+           {
+             "westBoundLongitude": -171.76409,
+             "eastBoundLongitude": -157.86768,
+             "southBoundLatitude": -14.42443,
+             "northBoundLatitude": 21.31573
+           }
+         ]
+       }
+     ]
+   }
+d) {
+     "level": "feature",
+     "extent": [
+       {
+         "geographicElement": [
+           {
+             "polygon": [
+               {
+                 "exterior": {
+                   "LinearRing": {
+                     "posList": [
+                       51.556272,
+                       -0.2803943,
+                       51.5562758,
+                       -0.2787397,
+                       51.5556539,
+                       -0.278736,
+                       51.5556501,
+                       -0.2803906,
+                       51.556272,
+                       -0.2803943
+                     ]
+                   }
+                 }
+               }
+             ]
+           }
+         ]
+       }
+     ]
+   }
 ----
 
 The MD_ReferenceSystem is encoded as a JSON object.
@@ -171,17 +251,16 @@ Examples:
 
 [source%unnumbered,json]
 ----
-a)	{
-        "referenceSystem": {
-            "referenceSystemIdentifier": "EPSG:3857"
-        }
-    }
-
+a) {
+     "referenceSystem": {
+       "referenceSystemIdentifier": "EPSG:3857"
+     }
+   }
 b) {
-        "referenceSystem": {
-            "referenceSystemIdentifier": "EPSG:4326"
-        }
-    }
+     "referenceSystem": {
+       "referenceSystemIdentifier": "EPSG:4326"
+     }
+   }
 ----
 
 The LI_Lineage is encoded as a JSON object.
@@ -201,44 +280,44 @@ Examples:
 [source%unnumbered,json]
 ----
 {
-    "LI_Lineage": {
+  "LI_Lineage": {
     "statement": "The dataset was generated from high-resolution satellite imagery through a standardized preprocessing and manual labeling workflow for AI model training.",
     "source": [
-        {
+      {
         "LI_Source": {
-            "description": "High-resolution multispectral satellite imagery acquired in 2023 covering urban areas.",
-            "sourceCitation": {
+          "description": "High-resolution multispectral satellite imagery acquired in 2023 covering urban areas.",
+          "sourceCitation": {
             "CI_Citation": {
-                "title": "Urban Satellite Imagery Dataset 2023"
+              "title": "Urban Satellite Imagery Dataset 2023"
             }
-            }
+          }
         }
-        }
+      }
     ],
     "processStep": [
-        {
+      {
         "LI_ProcessStep": {
-            "description": "Radiometric calibration and geometric correction were applied to the raw satellite images.",
-            "rationale": "To ensure spatial alignment and consistent reflectance values for subsequent labeling.",
-            "stepDateTime": {
+          "description": "Radiometric calibration and geometric correction were applied to the raw satellite images.",
+          "rationale": "To ensure spatial alignment and consistent reflectance values for subsequent labeling.",
+          "stepDateTime": {
             "TimeInstant": "2023-06-15T10:00:00Z"
-            }
+          }
         }
-        },
-        {
+      },
+      {
         "LI_ProcessStep": {
-            "description": "Trained annotators manually labeled buildings and roads using a GIS-based annotation platform.",
-            "rationale": "To generate high-quality ground truth data for supervised deep learning models.",
-            "stepDateTime": {
+          "description": "Trained annotators manually labeled buildings and roads using a GIS-based annotation platform.",
+          "rationale": "To generate high-quality ground truth data for supervised deep learning models.",
+          "stepDateTime": {
             "TimePeriod": {
-                "begin": "2023-06-20",
-                "end": "2023-07-10"
+              "begin": "2023-06-20",
+              "end": "2023-07-10"
             }
-            }
+          }
         }
-        }
+      }
     ]
-    }
+  }
 }
 ----
 
@@ -258,35 +337,32 @@ Examples:
 
 [source%unnumbered,json]
 ----
-a)  {
-        "distance":{
-            "value": 0.5, "uom": "m"
-        }
-    }
-
+a) {
+     "distance": {
+       "value": 0.5,
+       "uom": "m"
+     }
+   }
 b) {
-        "equivalentScale": { 
-            "MD_RepresentativeFraction": { 
-                "denominator": 10000 
-            } 
-        } 
-    }
-
-c)  { 
-        "vertical": {
-            "value": 1, 
-            "uom": "m" 
-        }
-    }
-
-d)  {
-        "angularDistance": { 
-            "value": 0.01, 
-            "uom": "degree" 
-        }
-    }
-
-e)  { 
-        "levelOfDetail": "High resolution imagery suitable for urban analysis" 
-    }
+     "equivalentScale": {
+       "MD_RepresentativeFraction": {
+         "denominator": 10000
+       }
+     }
+   }
+c) {
+     "vertical": {
+       "value": 1,
+       "uom": "m"
+     }
+   }
+d) {
+     "angularDistance": {
+       "value": 0.01,
+       "uom": "degree"
+     }
+   }
+e) {
+     "levelOfDetail": "High resolution imagery suitable for urban analysis"
+   }
 ----

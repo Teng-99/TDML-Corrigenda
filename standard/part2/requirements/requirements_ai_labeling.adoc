@@ -38,19 +38,27 @@ Example:
 
 [source%unnumbered,json]
 ----
- {
-   "type": "AI_Labeling",
-   "id": "0",
-   "scope": {
-      "level": "dataset",
-      "levelDescription": [{
-         "dataset": "whu_rs19"
-      }]
-   },
-   "labelingTime": "2015-04-20T07:04:15Z",
-   "labelers": [{..}],
-   "procedure": {..}
- }
+{
+  "type": "AI_Labeling",
+  "id": "0",
+  "scope": {
+    "level": "dataset",
+    "levelDescription": [
+      {
+        "dataset": "whu_rs19"
+      }
+    ]
+  },
+  "labelingTime": "2015-04-20T07:04:15Z",
+  "labelers": [
+    {
+      ..
+    }
+  ],
+  "procedure": {
+    ..
+  }
+}
 ----
 
 The AI_Labeler object is encoded as a JSON object with properties as shown in <<table-ai-labeler-properties>>.
@@ -77,11 +85,11 @@ Example:
 
 [source%unnumbered,json]
 ----
- {
-   "type": "AI_Labeler",
-   "id": "0",
-   "name": "Tom"
- }
+{
+  "type": "AI_Labeler",
+  "id": "0",
+  "name": "Tom"
+}
 ----
 
 An AI_LabelingProcedure object is encoded as a JSON object with properties as shown in <<table-ai-labelingprocedure-properties>>.
@@ -109,12 +117,16 @@ Example:
 
 [source%unnumbered,json]
 ----
- {
-   "type": "AI_LabelingProcedure",
-   "id": "0",
-   "methods": ["manual"],
-   "tools": ["ArcGIS"]
- }
+{
+  "type": "AI_LabelingProcedure",
+  "id": "0",
+  "methods": [
+    "manual"
+  ],
+  "tools": [
+    "ArcGIS"
+  ]
+}
 ----
 
 The AI_LabelingMethodCode is encoded as a text string whose value is one of "manual", "semi-automatic", "automatic" or "unknown".

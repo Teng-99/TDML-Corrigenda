@@ -34,23 +34,25 @@ Example:
 
 [source%unnumbered,json]
 ----
- {
-    "type": "AI_ClassBalanceDegree",
-    "measure": {
-      "measureDescription": "Balance degree of label classes"
-    },
-    "evaluationMethod": [{
+{
+  "type": "AI_ClassBalanceDegree",
+  "measure": {
+    "measureDescription": "Balance degree of label classes"
+  },
+  "evaluationMethod": [
+    {
       "evaluationMethodDescription": "Counting the number of training samples belonging to each class and calculating the balance degree"
-    }],
-    "result": [
-      {
-        "quantitativeResult": {
-          "value": [
-            93.5
-          ],
-          "valueUnit": "%"
-        }
+    }
+  ],
+  "result": [
+    {
+      "quantitativeResult": {
+        "value": [
+          93.5
+        ],
+        "valueUnit": "%"
       }
-    ]
- }
+    }
+  ]
+}
 ----

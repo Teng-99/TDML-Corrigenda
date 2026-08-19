@@ -57,8 +57,14 @@ Examples:
 
 [source%unnumbered,json]
 ----
- a) {"key": "forest", "value": "RGB(0,255,255)"}
- b) {"key": "precision", "value": 0.8}
+a) {
+     "key": "forest",
+     "value": "RGB(0,255,255)"
+   }
+b) {
+     "key": "precision",
+     "value": 0.8
+   }
 ----
 
 The URL is encoded as a text string.
